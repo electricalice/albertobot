@@ -28,10 +28,20 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content == 'chiacchiere') {
-    	message.reply('Si chiamano Frappe');
+    	message.reply('Ti sbagli, si chiamano Frappe');
   	}
 });
 
+client.on('message', message => {
+    if (message.content == 'bugie') {
+    	message.reply('E\' un errore comune, ma in realtà si chiamano Frappe');
+  	}
+});
+client.on('message', message => {
+    if (message.content == 'crostoli') {
+    	message.reply('E\' sbagliato, si chiamano Frappe');
+  	}
+});
 
 
 // THIS  MUST  BE  THIS  WAY
