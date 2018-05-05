@@ -1,0 +1,8 @@
+{
+  "name": "AlbertoBot",
+  "version": "1.0.0",
+  "description": "il più secsi dei bot",
+  "main": "bot.js",
+  "author": "electricalice",
+  "dependencies": {}
+}
