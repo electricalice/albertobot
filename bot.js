@@ -5,11 +5,9 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-const nomebot = '!';
-
 
 client.on('message', message => {
-    if (message.content == nomebot + 'ping') {
+    if (message.content == 'ping') {
     	message.reply('pong');
   	}
 });
