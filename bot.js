@@ -5,8 +5,10 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
+var nomebot = 'Alberto ';
+
 client.on('message', message => {
-    if (message.content === 'ping') {
+    if (message.content === nomebot.'ping') {
     	message.reply('pong');
   	}
 });
@@ -15,7 +17,7 @@ client.on('message', message => {
 client.on('message', function (user, userID, channelID, message, evt) {
     // Our bot needs to know if it will execute a command
     // It will listen for messages that will start with `!`
-    if (message.substring(0, 1) == 'Alberto') {
+    if (message.substring(0, 1) == '!') {
         var args = message.substring(1).split(' ');
         var cmd = args[0];
        
@@ -25,7 +27,7 @@ client.on('message', function (user, userID, channelID, message, evt) {
             case 'parlami':
                 bot.sendMessage({
                     to: channelID,
-                    message: 'Ciao! '.user
+                    message: 'Ciao!'
                 });
             break;
             // Just add any case commands if you want to..
