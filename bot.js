@@ -36,18 +36,21 @@ client.on('message', message => {
         var rand = risposte[Math.floor(Math.random() * risposte.length)];
     	message.reply(rand);
   	}
+    else if (message.content == 'bugie') {
+        
+        var risposte = [ 'Ti sbagli, si chiamano Frappe', 'E\' un errore comune, ma in realtà si chiamano Frappe', 'E\' sbagliato, si chiamano Frappe' ];
+        var rand = risposte[Math.floor(Math.random() * risposte.length)];
+    	message.reply(rand);
+  	}
+    else if (message.content == 'crostoli') {
+        
+        var risposte = [ 'Ti sbagli, si chiamano Frappe', 'E\' un errore comune, ma in realtà si chiamano Frappe', 'E\' sbagliato, si chiamano Frappe' ];
+        var rand = risposte[Math.floor(Math.random() * risposte.length)];
+    	message.reply(rand);
+  	}
 });
 
-client.on('message', message => {
-    if (message.content == 'bugie') {
-    	message.reply('E\' un errore comune, ma in realtà si chiamano Frappe');
-  	}
-});
-client.on('message', message => {
-    if (message.content == 'crostoli') {
-    	message.reply('E\' sbagliato, si chiamano Frappe');
-  	}
-});
+
 
 
 // THIS  MUST  BE  THIS  WAY
