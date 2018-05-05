@@ -105,6 +105,11 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content.includes(nomebot + 'grazie')) {
+    	message.reply('Prego!');
+  	}
+});
 
 client.on('message', message => {
     if (message.content.includes(nomebot + 'dimmi qualcosa')) {
