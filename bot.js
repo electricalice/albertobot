@@ -21,7 +21,10 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content == nomebot + 'dimmi qualcosa') {
-    	message.reply('Sii la persona che io vorrei tu fossi! :angela:');
+        
+        var risposte = [ 'Londra è nata dal nulla, non per motivi militari, ma essenzialmente per ragioni commerciali.', 'Dal momento che nessun sistema industriale può stare in piedi con un numero esiguo di consumatori, se non si crea un mercato attraverso l’aumento diffuso del reddito il sistema s’inceppa', 'Bere vino era equiparato a un adulterio. Il bacio insomma era… l’etilometro della fedeltà. L’equazione è semplice. Bere infatti era l’anticamera dell’adulterio. Perché una donna, bevendo, perdeva il controllo e poteva facilmente commettere un tradimento o, più in generale, comportarsi in modo disdicevole.', 'Kairós era la divinità… dell’attimo fuggente! Cioè dell’occasione da non perdere. ', 'Credo che la formica parassitaria sia l\'animale più longevo e insieme più debole che esista. La struttura esoscheletrica è del tutto simile a una zanzara in volo, e tuttavia con un bulbo parcellizzato più regolare.', 'Prima di Ciampi la patria era un valore di destra, guerresco. Lui ha convinto gli italiani a fare pace con la bandiera e con l\'inno.',  ];
+        var rand = risposte[Math.floor(Math.random() * risposte.length)];
+    	message.reply(rand);
   	}
 });
 
