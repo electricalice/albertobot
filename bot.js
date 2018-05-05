@@ -4,8 +4,8 @@ const client = new Discord.Client();
 client.on('ready', () => {
     console.log('I am ready!');
 });
-
-const nomebot = "Alberto ";
+const senzasp = "Alberto";
+const nomebot = "Alberto" + " ";
 
 client.on('message', message => {
     if (message.content == nomebot + 'mi ami?') {
@@ -21,6 +21,11 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content.includes('Grazie' + senzasp)) {
+    	message.reply('prego!');
+  	}
+});
 
 client.on('message', message => {
     if (message.content == nomebot + 'ciao') {
