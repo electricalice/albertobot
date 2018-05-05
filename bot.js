@@ -14,6 +14,12 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content == nomebot + 'ciao') {
+    	message.reply('Ciao!');
+  	}
+});
+
+client.on('message', message => {
     if (message.content == nomebot + 'aiutami') {
     	message.reply('Se studi vai ovunque!');
   	}
