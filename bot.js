@@ -14,8 +14,8 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content.includes('culo')) {
-    	message.reply('Hey!');
+    if (message.content.includes(nomebot + 'dimmi perché')) {
+    	message.reply('Mi dispiace, ma non lo so.');
   	}
 });
 
