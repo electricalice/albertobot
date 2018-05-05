@@ -19,6 +19,12 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content == nomebot + 'dimmi qualcosa') {
+    	message.reply('Sii la persona che io vorrei tu fossi!');
+  	}
+});
+
 
 client.on('message', message => {
     if (message.content == 'chiacchiere') {
