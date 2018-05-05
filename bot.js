@@ -50,11 +50,6 @@ client.on('message', message => {
   	}
 });
 
-client.on('message', message => {
-    if (message.content.includes(nomebot)) {
-    	message.reply('State parlando di me?');
-  	}
-});
 
 client.on('message', message => {
     if (message.content.includes('GRAZIE ALBERTO')) {
