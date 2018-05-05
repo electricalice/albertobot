@@ -13,9 +13,15 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content == nomebot + 'aiutami') {
+    	message.reply('Se studi vai ovunque!');
+  	}
+});
+
 
 client.on('message', message => {
-    if (message.contains == 'chiacchiere') {
+    if (message.content == 'chiacchiere') {
     	message.reply('Si chiamano Frappe');
   	}
 });
