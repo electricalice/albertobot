@@ -38,21 +38,21 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content == 'chiacchiere') {
-        var rand = risposte[Math.floor(Math.random() * risposte.length)];
+        var rand = rispostefrappe[Math.floor(Math.random() * rispostefrappe.length)];
     	message.reply(rand);
   	}
     
 });
 client.on('message', message => {
     if (message.content == 'bugie') {
-        var rand = risposte[Math.floor(Math.random() * risposte.length)];
+        var rand = rispostefrappe[Math.floor(Math.random() * rispostefrappe.length)];
     	message.reply(rand);
   	}
     
 });
 client.on('message', message => {
     if (message.content == 'crostoli') {
-        var rand = risposte[Math.floor(Math.random() * risposte.length)];
+        var rand = rispostefrappe[Math.floor(Math.random() * rispostefrappe.length)];
     	message.reply(rand);
   	}
     
