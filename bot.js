@@ -15,7 +15,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content.includes(nomebot + 'dimmi perché')) {
-        var risposte = [ 'Mi dispiace ma non lo so', 'Perché la vita è piena di sofferenza', 'Perché si.',   ];
+        var risposte = [ 'La risposta è andata perduta nei secoli', 'Perché la vita è piena di sofferenza', 'Perché si.',  'E\' un mistero senza risposta', ];
         var rand = risposte[Math.floor(Math.random() * risposte.length)];
     	message.reply(rand);
   	}
@@ -60,7 +60,7 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content == nomebot + 'dimmi qualcosa') {
         
-        var risposte = [ 'Londra è nata dal nulla, non per motivi militari, ma essenzialmente per ragioni commerciali.', 'Dal momento che nessun sistema industriale può stare in piedi con un numero esiguo di consumatori, se non si crea un mercato attraverso l’aumento diffuso del reddito il sistema s’inceppa', 'Bere vino era equiparato a un adulterio. Il bacio insomma era… l’etilometro della fedeltà. L’equazione è semplice. Bere infatti era l’anticamera dell’adulterio. Perché una donna, bevendo, perdeva il controllo e poteva facilmente commettere un tradimento o, più in generale, comportarsi in modo disdicevole.', 'Kairós era la divinità… dell’attimo fuggente! Cioè dell’occasione da non perdere. ', 'Credo che la formica parassitaria sia l\'animale più longevo e insieme più debole che esista. La struttura esoscheletrica è del tutto simile a una zanzara in volo, e tuttavia con un bulbo parcellizzato più regolare.', 'Prima di Ciampi la patria era un valore di destra, guerresco. Lui ha convinto gli italiani a fare pace con la bandiera e con l\'inno.',  ];
+        var risposte = [ 'Londra è nata dal nulla, non per motivi militari, ma essenzialmente per ragioni commerciali.', 'Dal momento che nessun sistema industriale può stare in piedi con un numero esiguo di consumatori, se non si crea un mercato attraverso l’aumento diffuso del reddito il sistema s’inceppa', 'Bere vino era equiparato a un adulterio. Il bacio insomma era… l’etilometro della fedeltà. L’equazione è semplice. Bere infatti era l’anticamera dell’adulterio. Perché una donna, bevendo, perdeva il controllo e poteva facilmente commettere un tradimento o, più in generale, comportarsi in modo disdicevole.', 'Kairós era la divinità… dell’attimo fuggente! Cioè dell’occasione da non perdere. ', 'Credo che la formica parassitaria sia l\'animale più longevo e insieme più debole che esista. La struttura esoscheletrica è del tutto simile a una zanzara in volo, e tuttavia con un bulbo parcellizzato più regolare.', 'Prima di Ciampi la patria era un valore di destra, guerresco. Lui ha convinto gli italiani a fare pace con la bandiera e con l\'inno.', 'In araldica il topo simboleggia l\'uomo discreto e prudente. Compare raramente nelle armi. Definito spesso sorcio.',  ];
         var rand = risposte[Math.floor(Math.random() * risposte.length)];
     	message.reply(rand);
   	}
