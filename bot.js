@@ -15,7 +15,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-    if (message.content == 'chiacchiere') {
+    if (message.contains('chiacchiere')) {
     	message.reply('Si chiamano Frappe');
   	}
 });
