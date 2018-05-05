@@ -15,7 +15,9 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content.includes(nomebot + 'dimmi perché')) {
-    	message.reply('Mi dispiace, ma non lo so.');
+        var risposte = [ 'Mi dispiace ma non lo so', 'Perché la vita è piena di sofferenza', 'Perché si.',   ];
+        var rand = risposte[Math.floor(Math.random() * risposte.length)];
+    	message.reply(rand);
   	}
 });
 
