@@ -28,7 +28,10 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content == 'chiacchiere') {
-    	message.reply('Ti sbagli, si chiamano Frappe');
+        
+        var risposte = [ 'Ti sbagli, si chiamano Frappe', 'E\' un errore comune, ma in realtà si chiamano Frappe', 'E\' sbagliato, si chiamano Frappe' ];
+        var rand = risposte[Math.floor(Math.random() * myArray.length)];
+    	message.reply(rand);
   	}
 });
 
