@@ -5,7 +5,7 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-var nomebot = 'Alberto ';
+var nomebot = '!';
 
 
 client.on('message', message => {
