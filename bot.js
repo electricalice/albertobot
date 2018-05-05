@@ -64,21 +64,21 @@ client.on('message', message => {
         var rispostefrappe = [ 'Ti sbagli, si chiamano Frappe', 'E\' un errore comune, ma in realtà si chiamano Frappe', 'E\' sbagliato, si chiamano Frappe' ];
 
 client.on('message', message => {
-    if (message.content == 'chiacchiere') {
+    if (message.content.includes('chiacchiere')) {
         var rand = rispostefrappe[Math.floor(Math.random() * rispostefrappe.length)];
     	message.reply(rand);
   	}
     
 });
 client.on('message', message => {
-    if (message.content == 'bugie') {
+    if (message.content.includes('bugie')) {
         var rand = rispostefrappe[Math.floor(Math.random() * rispostefrappe.length)];
     	message.reply(rand);
   	}
     
 });
 client.on('message', message => {
-    if (message.content == 'crostoli') {
+    if (message.content.includes('crostoli')) {
         var rand = rispostefrappe[Math.floor(Math.random() * rispostefrappe.length)];
     	message.reply(rand);
   	}
