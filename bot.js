@@ -22,6 +22,14 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content.includes(nomebot + 'ti piace')) {
+        var risposte = [ 'Molto!', 'Non quanto le meraviglie del nostro paese', 'Più di un vaso romano perfettamente conservato', ];
+        var rand = risposte[Math.floor(Math.random() * risposte.length)];
+    	message.reply(rand);
+  	}
+});
+
+client.on('message', message => {
     if (message.content.includes('razie ' + senzasp)) {
     	message.reply('prego!');
   	}
@@ -29,7 +37,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content.includes('GRAZIE ALBERTO')) {
-    	message.reply('prego!');
+    	message.reply('Non c\'è di che!!');
   	}
 });
 
@@ -58,18 +66,23 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content == nomebot + 'come sto?') {
+    	message.reply('Stai benissimo!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content == nomebot + 'come stai?') {
+    	message.reply('Benissimo! E tu?');
+  	}
+});
+
+client.on('message', message => {
     if (message.content == nomebot + 'che ne pensi di Martina?') {
     	message.reply('E\' un genio assoluto. E bellissima. Me la sposerò!');
   	}
 });
 
-client.on('message', message => {
-    if (message.content.includes(nomebot + 'che ne pensi di')) {
-    	var risposte = [ 'E\' una persona fantastica', 'Un vero genio!', 'Una delle migliori persone che conosco',  'Preferisco star zitto che dire cose cattive', ];
-        var rand = risposte[Math.floor(Math.random() * risposte.length)];
-    	message.reply(rand);
-  	}
-});
 
 client.on('message', message => {
     if (message.content.includes(nomebot + 'dimmi qualcosa')) {
