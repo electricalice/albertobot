@@ -14,6 +14,13 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content.includes('culo')) {
+    	message.reply('Hey!');
+  	}
+});
+
+
+client.on('message', message => {
     if (message.content == nomebot + 'ciao') {
     	message.reply('Ciao!');
   	}
