@@ -9,7 +9,7 @@ var nomebot = '!';
 
 
 client.on('message', message => {
-    if (message.content === nomebot + 'ping') {
+    if (message.content == nomebot + "ping") {
     	message.reply('pong');
   	}
 });
