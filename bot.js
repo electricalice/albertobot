@@ -20,6 +20,12 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content == nomebot + 'perché mi ignori?') {
+    	message.reply('No, non ti sto ignorando!');
+  	}
+});
+
+client.on('message', message => {
     if (message.content == nomebot + 'aiutami') {
     	message.reply('Se studi vai ovunque!');
   	}
