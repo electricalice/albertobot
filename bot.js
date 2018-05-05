@@ -9,7 +9,7 @@ const nomebot = "Alberto ";
 
 client.on('message', message => {
     if (message.content == nomebot + 'mi ami?') {
-    	message.reply('si ti amo');
+    	message.reply('si certo');
   	}
 });
 
