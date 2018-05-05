@@ -22,6 +22,15 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content.includes(nomebot + 'dimmi perchè')) {
+        var risposte = [ 'La risposta è andata perduta nei secoli', 'Perché la vita è piena di sofferenza', 'Perché si.',  'E\' un mistero senza risposta', ];
+        var rand = risposte[Math.floor(Math.random() * risposte.length)];
+    	message.reply(rand);
+  	}
+});
+
+
+client.on('message', message => {
     if (message.content.includes(nomebot + 'ti piace')) {
         var risposte = [ 'Molto!', 'Non quanto le meraviglie del nostro paese', 'Più di un vaso romano perfettamente conservato', ];
         var rand = risposte[Math.floor(Math.random() * risposte.length)];
@@ -30,8 +39,20 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content.includes(nomebot + 'ti amo')) {
+    	message.reply('Lo so!');
+  	}
+});
+
+client.on('message', message => {
     if (message.content.includes('razie ' + senzasp)) {
     	message.reply('prego!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content.includes(nomebot)) {
+    	message.reply('State parlando di me?');
   	}
 });
 
@@ -49,6 +70,12 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content.includes(nomebot + 'perché mi ignori')) {
+    	message.reply('No, non ti sto ignorando!');
+  	}
+});
+
+client.on('message', message => {
+    if (message.content.includes(nomebot + 'perchè mi ignori')) {
     	message.reply('No, non ti sto ignorando!');
   	}
 });
