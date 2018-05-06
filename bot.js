@@ -26,6 +26,14 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content == nomebot + 'id del canale') {
+        var numerocanale = channel.id;
+    	message.reply('si certo, ti amo tantissimo.');
+  	}
+});
+
+
         var risposteperche = [ 'La risposta è andata perduta nei secoli', 'Perché la vita è piena di sofferenza', 'Perché si.',  'E\' un mistero senza risposta', 'Lo sa solo la sibilla di cuma', 'Perché così va il mondo', 'Perché così hanno deciso le leggi della fisica', 'Perché l’evoluzione non è un’opinione', 'Non lo so, ma sicuramente il Polpo Paul lo sa',];
 
 
