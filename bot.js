@@ -31,18 +31,12 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content.includes(nomebot + 'perché')) {
+    if (message.content.includes(nomebot + 'perché') || message.content.includes(nomebot + 'perchè')) {
         var rand = risposteperche[Math.floor(Math.random() * risposteperche.length)];
     	message.reply(rand);
   	}
 });
 
-client.on('message', message => {
-    if (message.content.includes(nomebot + 'perchè')) {
-        var rand = risposteperche[Math.floor(Math.random() * risposteperche.length)];
-    	message.reply(rand);
-  	}
-});
 
 
 
