@@ -28,8 +28,8 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content == nomebot + 'id') {
-        var numerocanale = channel.type;
-    	message.channel.send(numerocanale);
+
+    	message.channel.send(channel.id);
         message.channel.send('entra nellif');
   	}
 });
