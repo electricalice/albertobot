@@ -28,7 +28,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content == nomebot + 'id') {
-message.channel.send('${channel.442734212802543636}\nNome del server: ${message.guild.name} \nid canale: ${message.channel.id} \nnome canale: ${message.channel.name}');
+message.channel.send('<channel 442734212802543636>\nNome del server: ${message.guild.name} \nid canale: ${message.channel.id} \nnome canale: ${message.channel.name}');
 
         message.author.send('ILU');
   	}
