@@ -17,11 +17,33 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-    if (message.content.includes(nomebot + 'dimmi perché') || message.content.includes(nomebot + 'dimmi perchè') || message.content.includes(nomebot + 'perché') || message.content.includes(nomebot + 'perchè') ) {
+    if (message.content.includes(nomebot + 'dimmi perché')) {
         var rand = risposteperche[Math.floor(Math.random() * risposteperche.length)];
     	message.reply(rand);
   	}
 });
+
+client.on('message', message => {
+    if (message.content.includes(nomebot + 'dimmi perchè')) {
+        var rand = risposteperche[Math.floor(Math.random() * risposteperche.length)];
+    	message.reply(rand);
+  	}
+});
+
+client.on('message', message => {
+    if (message.content.includes(nomebot + 'perché')) {
+        var rand = risposteperche[Math.floor(Math.random() * risposteperche.length)];
+    	message.reply(rand);
+  	}
+});
+
+client.on('message', message => {
+    if (message.content.includes(nomebot + 'perchè')) {
+        var rand = risposteperche[Math.floor(Math.random() * risposteperche.length)];
+    	message.reply(rand);
+  	}
+});
+
 
 
 client.on('message', message => {
