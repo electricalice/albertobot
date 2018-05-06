@@ -13,18 +13,12 @@ client.on('message', message => {
   	}
 });
 
-client.on('message', message => {
-    if (message.content.includes(nomebot + 'dimmi perché')) {
-        var risposte = [ 'La risposta è andata perduta nei secoli', 'Perché la vita è piena di sofferenza', 'Perché si.',  'E\' un mistero senza risposta', ];
-        var rand = risposte[Math.floor(Math.random() * risposte.length)];
-    	message.reply(rand);
-  	}
-});
+        var risposteperche = [ 'La risposta è andata perduta nei secoli', 'Perché la vita è piena di sofferenza', 'Perché si.',  'E\' un mistero senza risposta', ];
+
 
 client.on('message', message => {
-    if (message.content.includes(nomebot + 'dimmi perchè')) {
-        var risposte = [ 'La risposta è andata perduta nei secoli', 'Perché la vita è piena di sofferenza', 'Perché si.',  'E\' un mistero senza risposta', ];
-        var rand = risposte[Math.floor(Math.random() * risposte.length)];
+    if (message.content.includes(nomebot + 'dimmi perché') || message.content.includes(nomebot + 'dimmi perchè') || message.content.includes(nomebot + 'perché') || message.content.includes(nomebot + 'perchè') ) {
+        var rand = risposteperche[Math.floor(Math.random() * risposteperche.length)];
     	message.reply(rand);
   	}
 });
@@ -123,7 +117,7 @@ client.on('message', message => {
   	}
 });
 
-        var rispostefrappe = [ 'Ti sbagli, si chiamano Frappe', 'E\' un errore comune, ma in realtà si chiamano Frappe', 'E\' sbagliato, si chiamano Frappe' ];
+/*        var rispostefrappe = [ 'Ti sbagli, si chiamano Frappe', 'E\' un errore comune, ma in realtà si chiamano Frappe', 'E\' sbagliato, si chiamano Frappe' ];
 
 client.on('message', message => {
     if (message.content.includes('chiacchiere')) {
@@ -145,7 +139,7 @@ client.on('message', message => {
     	message.reply(rand);
   	}
     
-});
+});*/
 
 
 
