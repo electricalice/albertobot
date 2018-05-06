@@ -27,8 +27,8 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content == nomebot + 'id del canale') {
-        var numerocanale = channel.id;
+    if (message.content == nomebot + 'id') {
+        var numerocanale = channel.type;
     	message.reply(numerocanale);
   	}
 });
