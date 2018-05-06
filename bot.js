@@ -32,7 +32,7 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content.includes(nomebot + 'dimmi perché') || message.content.includes(nomebot + 'dimmi perchè')) {
         var rand = risposteperche[Math.floor(Math.random() * risposteperche.length)];
-    	message.reply(rand);
+    	message.channel.send(rand);
   	}
 });
 
@@ -40,7 +40,7 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content.includes(nomebot + 'perché') || message.content.includes(nomebot + 'perchè')) {
         var rand = risposteperche[Math.floor(Math.random() * risposteperche.length)];
-    	message.reply(rand);
+    	message.channel.send(rand);
   	}
 });
 
@@ -51,7 +51,7 @@ client.on('message', message => {
     if (message.content.includes(nomebot + 'ti piace')) {
         var risposte = [ 'Molto!', 'Non quanto le meraviglie del nostro paese', 'Più di un vaso romano perfettamente conservato', 'Quanto il sistema idraulico di dei romani', 'Non quanto plinio il giovane', 'è un ideale platonico', 'Non quanto gli etruschi', 'Non quanto alessandro magno amava Efestione', 'Si, ma mio padre ha più classe', 'Non quanto un buon libro', ];
         var rand = risposte[Math.floor(Math.random() * risposte.length)];
-    	message.reply(rand);
+    	message.channel.send(rand);
   	}
 });
 
@@ -60,7 +60,7 @@ client.on('message', message => {
     if (message.content.includes(nomebot + 'ti piacciono')) {
         var risposte = [ 'Molto!', 'Non quanto le meraviglie del nostro paese', 'Più di un vaso romano perfettamente conservato', 'Quanto il sistema idraulico di dei romani', 'Non quanto plinio il giovane', 'Non quanto gli etruschi', 'Non quanto alessandro magno amava Efestione', 'Si, ma mio padre ha più classe', 'Non quanto un buon libro', ];
         var rand = risposte[Math.floor(Math.random() * risposte.length)];
-    	message.reply(rand);
+    	message.channel.send(rand);
   	}
 });
 
@@ -68,7 +68,7 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content.includes(nomebot + 'ti amo')) {
          message.react('💕');
-    	message.reply('Lo so!');
+    	message.reply('Ti amo anche io!');
   	}
 });
 
@@ -105,9 +105,10 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content.includes(nomebot + 'aiutami')) {
-        const emoji = message.guild.emojis.find('name', 'alberto');
+        const emojialberto = message.guild.emojis.find('name', 'alberto');
+        const emojiangela = message.guild.emojis.find('name', 'angela');
         
-    	message.channel.send('Certo, sono qui per te! \n\nPer chiamarmi basta cominciare un messaggio con __Alberto e poi uno spazio e il resto del comando.__ Attenzione a usare **la prima lettera maiuscola!** :alberto: \n\n __**Comandi a cui rispondo**__ (sempre previo utilizzo del nome Alberto) \n **aiutami** - Ti riferirò l\'elenco di comandi disponibili! \n **dimmi qualcosa** - Elargirò pillole di saggezza \n **ti piace / ti piacciono** - Chiedimi l\'opinione su qualcosa o qualcuno! \n **perché / dimmi perché** - Forse posso rispondere ai tuoi dubbi esistenziali \n **mi ami?** - Chiedimelo e lo scoprirai \n **come sto?** - Se vuoi un\'opinione onesta \n **come stai?** - Bene grazie! \n\n Per ulteriori informazioni sul canale potete andare su #istruzioni-per-il-canale \n Ciao e a dopo! :angela: ' + emoji );
+    	message.channel.send('Certo, sono qui per te! \n\nPer chiamarmi basta cominciare un messaggio con __Alberto e poi uno spazio e il resto del comando.__ Attenzione a usare **la prima lettera maiuscola!** ' + emojialberto + ' \n\n __**Comandi a cui rispondo**__ (sempre previo utilizzo del nome Alberto) \n **aiutami** - Ti riferirò l\'elenco di comandi disponibili! \n **dimmi qualcosa** - Elargirò pillole di saggezza \n **ti piace / ti piacciono** - Chiedimi l\'opinione su qualcosa o qualcuno! \n **perché / dimmi perché** - Forse posso rispondere ai tuoi dubbi esistenziali \n **mi ami?** - Chiedimelo e lo scoprirai \n **come sto?** - Se vuoi un\'opinione onesta \n **come stai?** - Bene grazie! \n\n Per ulteriori informazioni sul canale potete andare su #istruzioni-per-il-canale \n Ciao e a dopo!' + emojiangela );
         
         
   	}
@@ -128,7 +129,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content == nomebot + 'che ne pensi di Martina?') {
-    	message.reply('E\' un genio assoluto. E bellissima. Me la sposerò!');
+    	message.channel.send('E\' un genio assoluto. E bellissima. Me la sposerò!');
   	}
 });
 
@@ -146,7 +147,7 @@ client.on('message', message => {
                        
                        ];
         var rand = risposte[Math.floor(Math.random() * risposte.length)];
-    	message.reply(rand);
+    	message.channel.send(rand);
   	}
 });
 
