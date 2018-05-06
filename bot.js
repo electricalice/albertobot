@@ -28,8 +28,8 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content == nomebot + 'id') {
+message.channel.send(`This server's name is: ${message.guild.name} id channel ${message.channel.id} ${message.channel.name}`);
 
-    	message.channel.send(channel.id);
         message.channel.send('entra nellif');
   	}
 });
