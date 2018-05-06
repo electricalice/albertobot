@@ -104,7 +104,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content.includes(nomebot + 'aiutami')) {
-    	message.channel.send('Certo, sono qui per te! \n Per chiamarmi basta cominciare un messaggio con __Alberto e poi uno spazio e il resto del comando.__ Attenzione a usare **la prima lettera maiuscola!** :alberto: \n Comandi a cui rispondo (sempre previo utilizzo del nome Alberto) \n ```aiutami - Ti riferirò l\'elenco di comandi disponibili! \n dimmi qualcosa - Elargirò pillole di saggezza \n ti piace / ti piacciono - Chiedimi l\'opinione su qualcosa o qualcuno! \n perché / dimmi perché - Forse posso rispondere ai tuoi dubbi esistenziali \n mi ami? - Chiedimelo e lo scoprirai \n come sto? - Se vuoi un\'opinione onesta \n come stai? - Bene grazie!``` \n Per ulteriori informazioni sul canale potete andare su #istruzioni-per-il-canale \n Ciao e a dopo! :angela: ',
+    	message.channel.send('Certo, sono qui per te! \n\nPer chiamarmi basta cominciare un messaggio con __Alberto e poi uno spazio e il resto del comando.__ Attenzione a usare **la prima lettera maiuscola!** :alberto: \n\n __**Comandi a cui rispondo**__ (sempre previo utilizzo del nome Alberto) \n **aiutami** - Ti riferirò l\'elenco di comandi disponibili! \n **dimmi qualcosa** - Elargirò pillole di saggezza \n **ti piace / ti piacciono** - Chiedimi l\'opinione su qualcosa o qualcuno! \n **perché / dimmi perché** - Forse posso rispondere ai tuoi dubbi esistenziali \n **mi ami?** - Chiedimelo e lo scoprirai \n **come sto?** - Se vuoi un\'opinione onesta \n **come stai?** - Bene grazie! \n\n Per ulteriori informazioni sul canale potete andare su #istruzioni-per-il-canale \n Ciao e a dopo! :angela: ',
                              
 
 );
