@@ -29,7 +29,7 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content == nomebot + 'id del canale') {
         var numerocanale = channel.id;
-    	message.reply('si certo, ti amo tantissimo.');
+    	message.reply(numerocanale);
   	}
 });
 
