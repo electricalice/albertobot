@@ -104,7 +104,21 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content.includes(nomebot + 'aiutami')) {
-    	message.reply('Certo, sono qui per te!');
+    	message.channel.send('Certo, sono qui per te!', 
+            'Per chiamarmi basta cominciare un messaggio con Alberto e poi uno spazio e il resto del comando. Attenzione a usare la lettera maiuscola!',                   
+            'Comandi a cui rispondo (sempre previo utilizzo del nome Alberto)',
+            'aiutami - Ti riferirò l\'elenco di comandi disponibili!',
+            'dimmi qualcosa - Elargirò pillole di saggezza',
+            'ti piace / ti piacciono - Chiedimi l\'opinione su qualcosa o qualcuno!',
+            'perché / dimmi perché - Forse posso rispondere ai tuoi dubbi esistenziali',
+            'mi ami? - Chiedimelo e lo scoprirai',
+            'come sto? - Se vuoi un\'opinione onesta',
+            'come stai? - Bene grazie!',
+            'Per ulteriori informazioni sul canale potete andare su #istruzioni-per-il-canale ',
+            'Ciao e a dopo!',
+                             
+
+);
   	}
 });
 
