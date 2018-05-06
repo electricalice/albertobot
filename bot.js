@@ -7,13 +7,26 @@ client.on('ready', () => {
 const senzasp = "Alberto";
 const nomebot = "Alberto" + " ";
 
+
+
+// Create an event listener for new guild members
+client.on('guildMemberAdd', member => {
+  // Send the message to a designated channel on a server:
+  const channel = member.guild.channels.find('name', 'member-log');
+  // Do nothing if the channel wasn't found on this server
+  if (!channel) return;
+  // Send the message, mentioning the member
+  channel.send(`Benvenut* nel Cipolla Channel, ${member}! Spero ti troverai bene!`);
+});
+
+
 client.on('message', message => {
     if (message.content == nomebot + 'mi ami?') {
     	message.reply('si certo, ti amo tantissimo.');
   	}
 });
 
-        var risposteperche = [ 'La risposta è andata perduta nei secoli', 'Perché la vita è piena di sofferenza', 'Perché si.',  'E\' un mistero senza risposta', ];
+        var risposteperche = [ 'La risposta è andata perduta nei secoli', 'Perché la vita è piena di sofferenza', 'Perché si.',  'E\' un mistero senza risposta', 'Lo sa solo la sibilla di cuma', 'Perché così va il mondo', 'Perché così hanno deciso le leggi della fisica', 'Perché l’evoluzione non è un’opinione', 'Non lo so, ma sicuramente il Polpo Paul lo sa',];
 
 
 client.on('message', message => {
@@ -36,11 +49,21 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content.includes(nomebot + 'ti piace')) {
-        var risposte = [ 'Molto!', 'Non quanto le meraviglie del nostro paese', 'Più di un vaso romano perfettamente conservato', ];
+        var risposte = [ 'Molto!', 'Non quanto le meraviglie del nostro paese', 'Più di un vaso romano perfettamente conservato', 'Quanto il sistema idraulico di dei romani', 'Non quanto plinio il giovane', 'è un ideale platonico', 'Non quanto gli etruschi', 'Non quanto alessandro magno amava Efestione', 'Si, ma mio padre ha più classe', 'Non quanto un buon libro', ];
         var rand = risposte[Math.floor(Math.random() * risposte.length)];
     	message.reply(rand);
   	}
 });
+
+
+client.on('message', message => {
+    if (message.content.includes(nomebot + 'ti piacciono')) {
+        var risposte = [ 'Molto!', 'Non quanto le meraviglie del nostro paese', 'Più di un vaso romano perfettamente conservato', 'Quanto il sistema idraulico di dei romani', 'Non quanto plinio il giovane', 'Non quanto gli etruschi', 'Non quanto alessandro magno amava Efestione', 'Si, ma mio padre ha più classe', 'Non quanto un buon libro', ];
+        var rand = risposte[Math.floor(Math.random() * risposte.length)];
+    	message.reply(rand);
+  	}
+});
+
 
 client.on('message', message => {
     if (message.content.includes(nomebot + 'ti amo')) {
@@ -56,7 +79,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-    if (message.content.includes('GRAZIE ALBERTO')) {
+    if (message.content.includes('GRAZIE ALBERTO') || message.content.includes('grazie alberto')) {
     	message.reply('Non c\'è di che!!');
   	}
 });
@@ -85,11 +108,6 @@ client.on('message', message => {
   	}
 });
 
-client.on('message', message => {
-    if (message.content == nomebot + 'che ne pensi di Lavinia?') {
-    	message.reply('mmmmh.... non saprei. Non mi sembra molto intelligente.');
-  	}
-});
 
 client.on('message', message => {
     if (message.content == nomebot + 'come sto?') {
