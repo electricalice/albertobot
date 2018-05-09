@@ -66,7 +66,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-    if (message.content.includes(nomebot + 'ti piacciono') || message.content.includes(nomebot + 'cosa pensi degli')) {
+    if (message.content.includes(nomebot + 'ti piacciono')) {
         var risposte = [ 'Molto!', 'Non quanto le meraviglie del nostro paese', 'Più di un vaso romano perfettamente conservato', 'Quanto il sistema idraulico di dei romani', 'Non quanto plinio il giovane', 'Non quanto gli etruschi', 'Non quanto Alessandro Magno amava Efestione', 'Si, ma mio padre ha più classe', 'Non quanto un buon libro', 'Era meglio la peste nera del 1348', 'Era meglio la peste nera del 1630', 'Come le invasioni dei Mongoli', 'Quanto Michelangelo amava il Papa', 'Quanto a Michelangelo piaceva dipingere', 'Quanto a Bernini piaceva Borromini', 'Quanto a Carlo Magno piacevano le sue mogli', 'Quanto a Federico II piacevano le crociate', 'Quanto a Barbarossa piaceva la lega lombarda', 'Non ti curar di loro ma guarda e passa', 'Sono come gli americani in vietnam', 'Quanto Voyager', ];
         var rand = risposte[Math.floor(Math.random() * risposte.length)];
     	message.channel.send(rand);
