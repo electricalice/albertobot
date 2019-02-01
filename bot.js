@@ -175,7 +175,7 @@ client.on('message', message => {
 
 
 
-/*        var rispostefrappe = [ 'Ti sbagli, si chiamano Frappe', 'E\' un errore comune, ma in realtà si chiamano Frappe', 'E\' sbagliato, si chiamano Frappe' ];
+   var rispostefrappe = [ 'Ti sbagli, si chiamano Frappe', 'E\' un errore comune, ma in realtà si chiamano Frappe', 'E\' sbagliato, si chiamano Frappe' ];
 
 client.on('message', message => {
     if (message.content.includes('chiacchiere')) {
@@ -197,7 +197,7 @@ client.on('message', message => {
     	message.reply(rand);
   	}
     
-});*/
+});
 
 
 
