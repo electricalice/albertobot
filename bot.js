@@ -198,6 +198,13 @@ client.on('message', message => {
   	}
     
 });
+client.on('message', message => {
+    if (message.content.includes('chiacchiera')) {
+        var rand = rispostefrappe[Math.floor(Math.random() * rispostefrappe.length)];
+    	message.reply(rand);
+  	}
+    
+});
 
 
 
